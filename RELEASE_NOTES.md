@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.0.3
+GH#753 — make the prompt position-safe (§4.3.1). Replace the hardcoded positional ref `{{steps.Sprint Planning.output}}` (dangling for any consumer without a "Sprint Planning" step) with `{{step.context.sprint_plan}}`. Consumers supply the value via `bindings: sprint_plan` (from_step). Mirrors #749.
+
 ## v1.0.2
 GH#657 Framing B — republish wave. Bundle now ships `dependencies: []` in its signed manifest (injected by `publish-skrpt.mjs` for `--shared` publishes), so the App's dep-referenced install pipeline (post-PR #47) accepts it on standalone update via Hub Update-all. No content changes.
 
