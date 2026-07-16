@@ -2,7 +2,7 @@
 type: prompt
 id: allocate-resources
 title: Allocate Resources
-description: "Core prompt for optimising team member assignments"
+description: "Core prompt for optimizing team member assignments"
 tags: [Production, Agile, Planning]
 ---
 
